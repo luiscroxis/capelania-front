@@ -1,0 +1,20 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #150941;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.button_logo {
+  border: none;
+}
+.mini-logo {
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+
+}
