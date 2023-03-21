@@ -1,3 +1,61 @@
 <mat-card class="card-main">
-  <mat-card-content>Contatos</mat-card-content>
+  <mat-card-content>
+    <div class="content">
+      <p>Siga nas redes Sociais</p>
+      <p>Seja um Voluntario ou faça uma doação</p>
+    </div>
+
+    <div class="logos">
+      <div class="logo-link">
+        <a href="http://">
+          <img src="../../../../assets/Instagram.png"
+            alt="logo-link"
+            matTooltip="{{ userLink }}"
+          >
+       </a>
+      </div>
+
+      <div class="logo-link">
+        <a href="http://">
+          <img src="../../../../assets/facebook.png"
+          alt="logo-link"
+          matTooltip="{{ userLink }}"
+          >
+        </a>
+      </div>
+
+      <div class="logo-link">
+        <a href="http://">
+          <img src="../../../../assets/whatsapp_icon.png"
+            alt="logo-link"
+            #tooltip="matTooltip"
+            matTooltip="{{ contato }}"
+          >
+        </a>
+      </div>
+
+      <div class="logo-link">
+        <a href="mailto:">
+          <img src="../../../../assets/mail_icon.png"
+            alt="logo-link"
+            #tooltip="matTooltip"
+            matTooltip="{{ email }}"
+          >
+        </a>
+      </div>
+
+      <div class="logo-link-pix">
+          <a href="mailto:">
+            <img style="width: 150px; height: 150px;" src="../../../../assets/pix.png"
+              alt="logo-link"
+              #tooltip="matTooltip"
+              matTooltip="{{ pix }}"
+            >
+          </a>
+      </div>
+    </div>
+
+
+
+  </mat-card-content>
 </mat-card>
