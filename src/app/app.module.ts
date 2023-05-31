@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,8 @@ import { MissoesComponent } from './components/main/missoes/missoes.component';
 import { EventosComponent } from './components/main/eventos/eventos.component';
 import { ContatosComponent } from './components/main/contatos/contatos.component';
 import { MatCarouselModule } from '@magloft/material-carousel';
+import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,14 +22,17 @@ import { MatCarouselModule } from '@magloft/material-carousel';
     HistoriaComponent,
     MissoesComponent,
     EventosComponent,
-    ContatosComponent
+    ContatosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-     MatCarouselModule.forRoot(),
+    MatCarouselModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

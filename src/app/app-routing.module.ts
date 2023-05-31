@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HistoriaComponent } from './components/main/historia/historia.component';
 import { MissoesComponent } from './components/main/missoes/missoes.component';
 import { EventosComponent } from './components/main/eventos/eventos.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'contatos',
     component: ContatosComponent
+  },
+   {
+    path: 'login',
+    component: LoginComponent
   },
   {
     path: '**',
